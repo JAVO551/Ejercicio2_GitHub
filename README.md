@@ -63,6 +63,8 @@ Proceso de trabajo:
 
 ### Algo de código:
 
+```
+
 using System.Collections;
 
 using System.Collections.Generic;
@@ -111,3 +113,5 @@ public class FondoMovimiento : MonoBehaviour
     }
     
 }
+
+```
