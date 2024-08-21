@@ -4,13 +4,13 @@
 
 **Integrantes:**
 
-Carlos Villaseñor - Manager
+*Carlos Villaseñor - Manager
 
-Javier Diaz - Músico
+*Javier Diaz - Músico
 
-Jorge Gutierrez- Artista
+*Jorge Gutierrez- Artista
 
-Fernando Tenorio - Coder
+*Fernando Tenorio - Coder
 
 
 **Semestre:** 2024-2
