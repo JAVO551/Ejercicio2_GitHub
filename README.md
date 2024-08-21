@@ -61,7 +61,7 @@ Proceso de trabajo:
 
 (Diseño tercer nivel usando Paint)
 
-###Algo de código:
+### Algo de código:
 
 using System.Collections;
 
@@ -73,6 +73,7 @@ using UnityEngine;
 public class FondoMovimiento : MonoBehaviour
 
 {
+
     [SerializeField] private Vector2 velocidadMovimiento;
     
     private Vector2 offset;
