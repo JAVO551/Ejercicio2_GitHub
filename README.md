@@ -4,13 +4,13 @@
 
 **Integrantes:**
 
-*Carlos Villaseñor - Manager
+* Carlos Villaseñor - Manager
 
-*Javier Diaz - Músico
+* Javier Diaz - Músico
 
-*Jorge Gutierrez- Artista
+* Jorge Gutierrez- Artista
 
-*Fernando Tenorio - Coder
+* Fernando Tenorio - Coder
 
 
 **Semestre:** 2024-2
@@ -56,6 +56,36 @@ Proceso de trabajo:
 
 (Diseño tutorial el el laboratorio de SODVI)
 
+
 ![image](https://github.com/Carlos-MVV/SODVI-nivel-3/assets/92966348/5d99b8a5-bf03-4116-8ab2-87b73f770ec9)
 
 (Diseño tercer nivel usando Paint)
+
+###Algo de código:
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class FondoMovimiento : MonoBehaviour
+{
+    [SerializeField] private Vector2 velocidadMovimiento;
+    private Vector2 offset;
+    private Material material;
+    private Rigidbody2D jugador;
+
+    // Start is called before the first frame update
+    void Awake()
+    {
+        //Obtenemos el material del objeto
+        material = GetComponent<SpriteRenderer>().material;
+        jugador = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        offset = (jugador.velocity.x * 0.1f) *  velocidadMovimiento * Time.deltaTime;
+        material.mainTextureOffset += offset;
+    }
+}
